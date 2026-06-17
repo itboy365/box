@@ -1,43 +1,44 @@
 ---
+
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SearchBox from '../components/SearchBox.astro';
-import Section from '../components/Section.astro';
-import Contribute from '../components/Contribute.astro';
-import sites from '../data/sites.json';
+导入 Section 从 '../components/Section.astro'；
+导入贡献部分 from '../components/Contribute.astro';
+导入来自 '../data/sites.json' 的网站;
 
 const categories = [
   { key: 'national', title: '国家级生活服务' },
   { key: 'knowledge', title: '知识学习 · 国内' },
-  { key: 'tools', title: '实用在线工具' },
+  { key: '工具', title: '实用在线工具' },
   { key: 'inspiration', title: '灵感 · 推荐' },
   { key: 'international', title: '全球视野' },
-];
+输入的文本是：'>';
 ---
 
-<BaseLayout>
-  <div class="container">
+
+<基础布局>
+  
     <header class="header">
-      <span class="logo">WVIP.TOP</span>
-      <span class="slogan">万物精选 · 纯粹好用</span>
+      WVIP.TOP
+      万物精选 · 纯粹好用
     </header>
 
-    <SearchBox />
+    <搜索框 />
 
     {categories.map((cat, index) => (
-      <Section 
-        title={cat.title} 
-        sectionId={`section-${cat.key}`} 
-        sites={sites.filter(s => s.category === cat.key)} 
-      />
-    ))}
+      <章节
+        title={猫的标题}
+        sectionId={`section-${cat.key}`}
+        sites={sites.filter(s => s.category === cat.key)}
+      >
+    输入：     ))}
 
-    <Contribute />
+    <贡献 />
 
     <footer class="footer">
-      <div class="statement">
+      
         本站为非盈利个人站点，最初只是一个私人收藏夹，逐步整理迭代成现在的样子。没有商业推广，没有会员机制，只收录我认可的正规网站，方便自己，也方便大家。
       </div>
-      万物精选 · 纯粹好用 · <a href="https://wvip.top" target="_blank">WVIP.TOP</a>
-    </footer>
+
   </div>
-</BaseLayout>
+</基础布局>
