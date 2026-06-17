@@ -33,9 +33,28 @@ const categories = [
     <Contribute />
 
     <footer class="footer">
-      <div class="statement">
-        本站为非盈利个人站点，最初只是一个私人收藏夹，逐步整理迭代成现在的样子。纯粹方便自己，也方便大家。（发现链接打不开？请发送邮件至 admin@wvip.top，我会尽快修复。）
+      <div class="statement" style="text-indent: 2em; text-align: left; max-width: 480px; margin: 0 auto;">
+        本站为非盈利个人站点，最初只是一个私人收藏夹，逐步整理迭代成现在的样子。纯粹方便自己，也方便大家。
+      </div>
+      <div class="statement" style="text-align: left; max-width: 480px; margin: 0 auto; margin-top: 4px;">
+        （发现链接打不开？请发送邮件至 admin@wvip.top，我会尽快修复。）
       </div>
     </footer>
   </div>
 </BaseLayout>
+
+<style is:global>
+  /* 恢复标语渐变色、加大加粗、发光 */
+  .header .slogan {
+    font-size: clamp(28px, 5.5vw, 42px);
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    background: linear-gradient(135deg, #5bc0eb 0%, #9b6dff 50%, #e8b86d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 0 20px rgba(120, 150, 240, 0.5));
+    margin-bottom: 24px;
+    line-height: 1.3;
+  }
+</style>
