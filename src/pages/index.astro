@@ -6,7 +6,7 @@ import Contribute from '../components/Contribute.astro';
 import sites from '../data/sites.json';
 
 const categories = [
-  { key: 'national', title: '国家级生活服务' },
+  { key: 'national', title: '生活服务·国家级' },
   { key: 'knowledge', title: '知识学习 · 国内' },
   { key: 'tools', title: '实用在线工具' },
   { key: 'inspiration', title: '灵感 · 推荐' },
@@ -34,7 +34,7 @@ const categories = [
 
     <footer class="footer">
       <div class="statement" style="text-indent: 2em; text-align: left; max-width: 480px; margin: 0 auto;">
-        本站为非盈利个人站点，最初只是一个私人收藏夹，逐步整理迭代成现在的样子。纯粹方便自己，也方便大家。
+        本站为非盈利个人站点，最初只是个人收藏夹，不断整理、完善，变成了现在的数字藏馆。未来也会持续更新。纯粹方便自己，也方便大家。
       </div>
       <div class="statement" style="text-align: left; max-width: 480px; margin: 0 auto; margin-top: 4px;">
         （发现链接打不开？请发送邮件至 admin@wvip.top，我会尽快修复。）
@@ -44,7 +44,6 @@ const categories = [
 </BaseLayout>
 
 <style is:global>
-  /* 恢复标语渐变色、加大加粗、发光 */
   .header .slogan {
     font-size: clamp(28px, 5.5vw, 42px);
     font-weight: 700;
